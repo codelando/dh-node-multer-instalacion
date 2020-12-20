@@ -1,0 +1,16 @@
+<article class="card">
+    <div class="card-left">
+        <figure><img src="/img/groups/<%= group.image ? group.image : 'default.png' %>" alt=""></figure>
+        <h3>#<%= group.id %></h3>
+    </div>
+    <div class="card-content">
+        <h3><%= group.name %></h3>
+        <% if (group.category) { %>
+            <p>Categoría: <%= group.category.name %></p>
+        <%} %>
+        <p>Repositorio: <a href="<%= group.repository %>" target="_blank"><%= group.repository %></a></p>
+        <div>
+            <a class="button" href="/groups/<%= group.id %>">Ver detalle</a>
+        </div>
+    </div>   
+</article>

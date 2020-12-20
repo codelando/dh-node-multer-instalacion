@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <div class="container">
+            <section>
+                <div class="columns is-centered">
+                    <div class="column is-6">
+                        <h1>Registro</h1>
+                        <form action="/groups" method="POST">
+
+                            <div class="field">
+                                <label for="name">Nombre</label>
+                                <div class="control">
+                                    <input type="text" name="name">
+                                </div>
+                                <p class="feedback"></p>
+                            </div>
+
+                            <div class="field">
+                                <label for="name">Descripción</label>
+                                <div class="control">
+                                    <textarea name="description"></textarea>
+                                </div>
+                                <p class="feedback"></p>
+                            </div>
+
+                            <div class="field">
+                                <label for="name">Repositorio</label>
+                                <div class="control">
+                                    <input type="text" name="repository">
+                                </div>
+                                <p class="feedback"></p>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button type="submit">Crear grupo</button>
+                                </div>
+                            </div> 
+                        </form>  
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
